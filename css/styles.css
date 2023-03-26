@@ -3,3 +3,43 @@
   --text-color: hsl(0, 0%, 31%);
   --bg-color:  hsl(0, 0%, 90%);
 }
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+body.dark{
+  --text-color: hsl(0, 0%, 83%);
+  --bg-color: hsl(0, 0%, 15%);
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  padding: 0 1.5em;
+  background-color: blue;
+}
+.switches{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.toggle-theme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.toggle-theme__icon{
+  margin-right: 0.5em;
+  width: 25px;
+}
+.toggle-theme__text{
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
