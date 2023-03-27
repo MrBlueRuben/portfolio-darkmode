@@ -8,10 +8,12 @@ toggleTheme.addEventListener("click", () => {
     toggleIcon.classList.remove("sun-solid.svg");
     toggleIcon.classList.add("moon-solid.svg");
     toggleText.innerHTML = "Dark Mode";
+    toggleIcon.src = "assets/moon-solid.svg";
   }
   else { // If dark theme is disabled
     toggleIcon.classList.remove("moon-solid.svg");
     toggleIcon.classList.add("sun-solid.svg");
     toggleText.innerHTML = "Light Mode";
+    toggleIcon.src = "assets/sun-solid.svg";
   }
 });
