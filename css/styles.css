@@ -17,10 +17,10 @@ body.dark{
   --bg-card-color: hsl(0, 0%, 20%)
 }
 .header{
-  display: flex;
-  justify-content: center;
-  align-items: space-between;
-  height: 75px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* height: 75px; */
   padding: 0 1.5em;
   background-color: var(--bg-card-color);
 }
@@ -28,7 +28,6 @@ body.dark{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .toggle-theme{
   display: flex;
