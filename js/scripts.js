@@ -2,7 +2,8 @@ const toggleTheme = document.getElementById("toggle-theme");
 const toggleIcon = document.getElementById("toggle-icon");
 const toggleText = document.getElementById("toggle-text");
 const toggleColors = document.getElementById("toggle-colors");
-// const toggleColorIcon = document.getElementById("toggle-color-icon");
+const rootStyles = document.documentElement.style;
+console.log(rootStyles)
 toggleTheme.addEventListener("click", (e) => {
   e.preventDefault();
   e.stopPropagation();
@@ -23,6 +24,9 @@ toggleTheme.addEventListener("click", (e) => {
 });
 
 toggleColors.addEventListener("click", (e) => {
-  console.log(e)
+  // console.log(e.target.dataset);
+  // console.log(e.target.dataset.color);
+  rootStyles.setProperty("--primary-color", e.target.dataset.color);
+
 
 });
