@@ -3,6 +3,7 @@
   --text-color: hsl(0, 0%, 31%);
   --bg-color:  hsl(0, 0%, 90%);
   --bg-card-color: hsl(0, 0%, 98%);
+  --transition:color 0.1s ease-in-out, background-color 0.2s ease-in-out;
 }
 * {
   box-sizing: border-box;
@@ -10,6 +11,7 @@
 body{
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: var(--transition);
 }
 body.dark{
   --text-color: hsl(0, 0%, 83%);
@@ -17,18 +19,18 @@ body.dark{
   --bg-card-color: hsl(0, 0%, 20%)
 }
 .header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 75px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* height: 75px; */
   padding: 0 1.5em;
   background-color: var(--bg-card-color);
+  transition: var(--transition);
 }
 .switches{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .toggle-theme{
   display: flex;
@@ -46,7 +48,7 @@ body.dark{
   text-transform: capitalize;
 }
 .colors{
-  display: flexj;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 20px;
@@ -55,6 +57,19 @@ body.dark{
 .colors__item{
   width: 20px;
   height: 20px;
-  border: 1px solid white;
+  border: 1px solid var(--text-color);
+  background-color: var(--primary-color);
   cursor: pointer;
+}
+.colors__item--blue{
+  --primary-color: hsl(214, 84%, 56%);
+}
+.colors__item--green{
+  --primary-color: hsl(154, 84%, 56%);
+}
+.colors__item--purple{
+  --primary-color: hsl(274, 84%, 56%);
+}
+.colors__item--orange{
+  --primary-color: hsl(34, 84%, 56%);
 }

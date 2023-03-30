@@ -1,8 +1,13 @@
 const toggleTheme = document.getElementById("toggle-theme");
 const toggleIcon = document.getElementById("toggle-icon");
 const toggleText = document.getElementById("toggle-text");
-
-toggleTheme.addEventListener("click", () => {
+const toggleColors = document.getElementById("toggle-colors");
+const rootStyles = document.documentElement.style;
+console.log(rootStyles)
+toggleTheme.addEventListener("click", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  // console.log(document.body)
   document.body.classList.toggle("dark");
   if (document.body.classList.contains("dark")) { // If dark theme is enabled
     toggleIcon.classList.remove("sun-solid.svg");
@@ -16,4 +21,12 @@ toggleTheme.addEventListener("click", () => {
     toggleText.innerHTML = "Light Mode";
     toggleIcon.src = "assets/sun-solid.svg";
   }
+});
+
+toggleColors.addEventListener("click", (e) => {
+  // console.log(e.target.dataset);
+  // console.log(e.target.dataset.color);
+  rootStyles.setProperty("--primary-color", e.target.dataset.color);
+
+
 });
