@@ -16,6 +16,7 @@ a{
 img{
   max-width: 100%;
   display: block;
+  border-radius: var(--border-radius);
 }
 body{
   background-color: var(--bg-color);
@@ -107,4 +108,28 @@ body.dark{
   min-width: 320px;
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+.card__header{
+ padding: 1em 0;
+}
+.card__title{
+  margin: 0;
+  font-size: 1.2rem;
+}
+.card__subtitle{
+  opacity: 0.8;
+  font-size: 0.9rem;
+  /* color: var(--text-color); */
+}
+.card__link{
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.card__text{
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.icon {
+  margin-right: 0.5em;
 }
