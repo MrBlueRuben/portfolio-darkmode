@@ -1,17 +1,28 @@
 :root{
-  --primary-color: hsl(214, 84%, 56%);
+  --primary-color: #5e17eb;
   --text-color: hsl(0, 0%, 31%);
   --bg-color:  hsl(0, 0%, 90%);
   --bg-card-color: hsl(0, 0%, 98%);
   --transition:color 0.1s ease-in-out, background-color 0.2s ease-in-out;
+  --border-radius: 0.4em;
 }
 * {
   box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+img{
+  max-width: 100%;
+  display: block;
+  border-radius: var(--border-radius);
 }
 body{
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: var(--transition);
+  font-family: 'Poppins', sans-serif;
 }
 body.dark{
   --text-color: hsl(0, 0%, 83%);
@@ -19,18 +30,18 @@ body.dark{
   --bg-card-color: hsl(0, 0%, 20%)
 }
 .header{
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  /* height: 75px; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 75px;
   padding: 0 1.5em;
   background-color: var(--bg-card-color);
   transition: var(--transition);
 }
 .switches{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .toggle-theme{
   display: flex;
@@ -62,7 +73,7 @@ body.dark{
   cursor: pointer;
 }
 .colors__item--blue{
-  --primary-color: hsl(214, 84%, 56%);
+  --primary-color: #5e17eb;
 }
 .colors__item--green{
   --primary-color: hsl(154, 84%, 56%);
@@ -72,4 +83,56 @@ body.dark{
 }
 .colors__item--orange{
   --primary-color: hsl(34, 84%, 56%);
+}
+.title{
+  text-align: center;
+  color: var(primary-color);
+  transition: var(--transition);
+}
+.main{
+  display: grid;
+  padding: 2em;
+}
+@media screen and (min-width: 768px){
+  .main{
+    grid-template-columns: min-content 1fr;
+    grid-gap: 1.5em;
+  }
+}
+.card{
+  padding: 1em;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+}
+.card__img-container{
+  min-width: 320px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.card__header{
+ padding: 1em 0;
+}
+.card__title{
+  margin: 0;
+  font-size: 1.2rem;
+}
+.card__subtitle{
+  opacity: 0.8;
+  font-size: 0.9rem;
+  /* color: var(--text-color); */
+}
+.card__link{
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.card__text{
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.icon {
+  margin-right: 0.5em;
+}
+.card--experience{
+ margin-top: 10px;
 }

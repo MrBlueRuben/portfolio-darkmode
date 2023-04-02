@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.css" integrity="sha512-JC0aiIVN1FWqcFfux4Xy9wFgEK3JL1yHGjilaFEK7kzLHVW/PKAS2042T3yvvCqZFl4sYaWmZJ4p8kau+0U56g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
   </head>
   <body class="dark">
@@ -13,7 +15,6 @@
         <div id="toggle-theme" class="toggle-theme">
           <img id="toggle-icon" src="assets/moon-solid.svg" alt="icon theme" class="toggle-theme__icon">
           <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
-          <!-- <img src="assets/sun-solid.svg" alt="icon theme" class="toggle-theme__icon"> -->
         </div>
         <div id="toggle-colors" class="colors">
           <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
@@ -27,7 +28,7 @@
       <section class="column column--left">
        <article class="card card--profile">
         <div class="card__image-container">
-          <img src="" alt="">
+          <img src="./assets/img/RubenSanchez.png" alt="">
         </div>
         <div class="card__header">
          <h2 class="card__title">Rubén Sánchez Álvarez</h2>
@@ -35,10 +36,30 @@
         </div>
         <div class="card__body">
           <div class="card__link">
+            <i class="fa-regular fa-envelope icon"></i>
             <a href="mailto:sanchez.alvarez.ruben@gmail.com">sanchez.alvarez.ruben@gmail.com</a>
           </div>
           <div class="card__link">
+            <i class="fa-solid fa-mobile icon"></i>
             <a href="tel:632105578">632105578</a>
+          </div>
+          <p>Extremely motivated web developer.</p>
+          <p>Any occasion is good for developing my knowledge, growing and feeling expanded. I like coding the web so being part of the Le Wagon as student led me to understand the core concepts of object-oriented programming. Adopt the right technical workflow: design our wireframe & mockup, test our UX with a prototype.</p>
+          <p> As you can check on my projects and my github. Currently, learning JavaScript and React.
+          </p>
+        </div>
+       </article>
+       <article class="card card--experience">
+        <h2 class="card__title">Experience</h2>
+        <div class="experience">
+          <img id="toggle-images" src="./assets/img/logo-fe-blanco.png" alt="" class="experience__image">
+          <div class="experience__info">
+            <p class="experience__position">Event manager</p>
+            <p class="experience__time">Nov 2019 - Nov 2022
+            </p>
+            <p class="experience__description">
+              Responsible for: Content control on the sales website, copy traffic for distributors, Doré cinema ticket sales report, management of events such as the Day of Spanish Cinema and silent film cycle musicians.
+            </p>
           </div>
         </div>
        </article>
