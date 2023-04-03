@@ -139,12 +139,32 @@ body.dark{
   border: 1px solid var(--primary-color);
   transition: var(--transition);
 }
-.card--experience{
-  margin-top: 1em;
-}
-.card--experience h2{
+
+h2{
   padding-bottom: 1em;
 }
 .text__red{
   color: hsl(0, 84%, 56%);
+}
+.experience__company{
+  font-size: .9rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+.experience__position{
+  font-size: .8rem;
+  font-weight: 700;
+  margin: 0;
+}
+.experience__time{
+  font-size: .7rem;
+  margin: 0;
+}
+.experience__description{
+  font-size: .8rem;
+
+}
+.icon_experience {
+  /* text-decoration: none; */
+  color: inherit;
 }
