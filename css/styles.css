@@ -168,3 +168,26 @@ h2{
   /* text-decoration: none; */
   color: inherit;
 }
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+  padding-left: 1em;
+
+}
+.skills >i{
+  padding-right: 0.8em;
+  font-size: 1.5rem;
+}
+.column{
+  display: grid;
+  gap: 0.5em;
+}
+@media screen and (min-width: 768px){
+  .column--right{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
