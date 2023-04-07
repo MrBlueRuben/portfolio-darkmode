@@ -93,7 +93,7 @@ body.dark{
   display: grid;
   padding: 2em;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 720px){
   .main{
     grid-template-columns: min-content 1fr;
     grid-gap: 1.5em;
@@ -144,7 +144,7 @@ h2{
   padding-bottom: 1em;
 }
 .text__red{
-  color: hsl(0, 84%, 56%);
+  color: red;
 }
 .experience__company{
   font-size: .9rem;
@@ -165,7 +165,6 @@ h2{
 
 }
 .icon_experience {
-  /* text-decoration: none; */
   color: inherit;
 }
 .skills{
@@ -181,12 +180,13 @@ h2{
 .skills >i{
   padding-right: 0.8em;
   font-size: 1.5rem;
+  margin: 0;
 }
 .column{
   display: grid;
   gap: 0.5em;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 720px){
   .column--right{
     grid-template-columns: repeat(2, 1fr);
   }
