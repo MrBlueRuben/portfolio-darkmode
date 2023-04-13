@@ -184,6 +184,9 @@ h2{
 @media screen and (min-width: 720px){
   .column--right{
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    align-items: start;
+
   }
 }
 @media screen and (min-width: 720px){
